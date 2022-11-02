@@ -1,1 +1,0 @@
-# adaptamix.github.io
