@@ -757,27 +757,79 @@ function fnc_project_color(values, context) {
 
 
 
-function exp_plot_structure_gis_2rule0_eval_expression(context) {
-    // "species" = 'Qp'
+function exp_Parcelas_1rule0_eval_expression(context) {
+    // "Tipo" = 'Mixto' AND "layer" = '10m'
 
     var feature = context.feature;
     
     if (feature.properties) {
-        return (feature.properties['species']  == 'Qp');
+        return ((feature.properties['Tipo']  == 'Mixto') && (feature.properties['layer']  == '10m'));
     } else {
-        return (feature['species']  == 'Qp');
+        return ((feature['Tipo']  == 'Mixto') && (feature['layer']  == '10m'));
     }
 }
 
 
-function exp_plot_structure_gis_2rule1_eval_expression(context) {
-    // "species" = 'Ps'
+function exp_Parcelas_1rule1_eval_expression(context) {
+    // "Tipo" = 'Pino' AND "layer" = '10m'
 
     var feature = context.feature;
     
     if (feature.properties) {
-        return (feature.properties['species']  == 'Ps');
+        return ((feature.properties['Tipo']  == 'Pino') && (feature.properties['layer']  == '10m'));
     } else {
-        return (feature['species']  == 'Ps');
+        return ((feature['Tipo']  == 'Pino') && (feature['layer']  == '10m'));
+    }
+}
+
+
+function exp_Parcelas_1rule2_eval_expression(context) {
+    // "Tipo" = 'Roble' AND "layer" = '10m'
+
+    var feature = context.feature;
+    
+    if (feature.properties) {
+        return ((feature.properties['Tipo']  == 'Roble') && (feature.properties['layer']  == '10m'));
+    } else {
+        return ((feature['Tipo']  == 'Roble') && (feature['layer']  == '10m'));
+    }
+}
+
+
+function exp_Parcelas_1rule3_eval_expression(context) {
+    // "Tipo" = 'Mixto' AND "layer" = '20m'
+
+    var feature = context.feature;
+    
+    if (feature.properties) {
+        return ((feature.properties['Tipo']  == 'Mixto') && (feature.properties['layer']  == '20m'));
+    } else {
+        return ((feature['Tipo']  == 'Mixto') && (feature['layer']  == '20m'));
+    }
+}
+
+
+function exp_Parcelas_1rule4_eval_expression(context) {
+    // "Tipo" = 'Pino' AND "layer" = '20m'
+
+    var feature = context.feature;
+    
+    if (feature.properties) {
+        return ((feature.properties['Tipo']  == 'Pino') && (feature.properties['layer']  == '20m'));
+    } else {
+        return ((feature['Tipo']  == 'Pino') && (feature['layer']  == '20m'));
+    }
+}
+
+
+function exp_Parcelas_1rule5_eval_expression(context) {
+    // "Tipo" = 'Roble' AND "layer" = '20m'
+
+    var feature = context.feature;
+    
+    if (feature.properties) {
+        return ((feature.properties['Tipo']  == 'Roble') && (feature.properties['layer']  == '20m'));
+    } else {
+        return ((feature['Tipo']  == 'Roble') && (feature['layer']  == '20m'));
     }
 }
